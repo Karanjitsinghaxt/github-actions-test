@@ -10,3 +10,17 @@ jobs:
         run : | # running multiline commands
           node -v
           npm -v 
+      - name : python command
+        run: |
+          print("a")
+        shell: python  
+  run-window-command:
+    runs-on: windows-latest
+    needs: [run-shell-command] # Job will run in paraleel if dependency not specified,job will run 
+                               #after the run shell command is finished
+    steps:
+      - name: Get directory in powershell
+        run: Get-Location
+      - name: Directory bash
+        run: pwd
+        shell: bash 
