@@ -1,0 +1,22 @@
+name: Ali
+age: 28
+address: "dwi: ac"
+active: true
+key:
+    key: 32
+    key2: 32
+jsonObject : {key : value, key2: value, key3: {key: value}}
+array :
+    - items1
+    - item2
+    - {key: value}
+array2: [itemw, itemq]
+arr: 
+  - key: value
+    key2: value
+  - key: value
+    key2: value
+longtxt: |
+    asd adad
+    asdsdsad
+    asdds
