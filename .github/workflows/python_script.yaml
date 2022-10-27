@@ -1,0 +1,17 @@
+name : run main.py
+on: [push]
+jobs:
+  run-python-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name : checkout repo content
+        uses : actions/checkout@v2
+      - name: setup python
+        uses : actions/setup-python@v4
+        with:
+         python-version: '3.9'
+      - name: intalling files
+        run: |
+          # pip commands you want to run
+      - name: execute python script 
+        run: python main.py    
