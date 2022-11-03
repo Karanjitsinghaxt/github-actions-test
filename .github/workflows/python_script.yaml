@@ -16,5 +16,7 @@ jobs:
       - name: intalling files
         run: |
           # pip commands you want to run
-      - name: execute python script 
+      - name: execute python script
+        env:
+          USER_NAME: ${{secrets.USER_NAME}}
         run: python main.py    
