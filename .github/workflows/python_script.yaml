@@ -20,4 +20,4 @@ jobs:
         run: |
           # pip commands you want to run
       - name: execute python script 
-        run: python {{github.event.inputs.file_name}}
+        run: python '${{github.event.inputs.file_name}}'
