@@ -5,7 +5,7 @@ on:
      file_name:
        description: 'Filename'
        required: true
-       default: 'main.py'
+       default: main.py
 jobs:
   run-python-action:
     runs-on: ubuntu-latest
@@ -20,4 +20,4 @@ jobs:
         run: |
           # pip commands you want to run
       - name: execute python script 
-        run: python '{{github.event.inputs.file_name}}' 
+        run: python {{github.event.inputs.file_name}}
